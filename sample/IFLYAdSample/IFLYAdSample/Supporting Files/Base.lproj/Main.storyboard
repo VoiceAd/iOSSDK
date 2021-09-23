@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="Uqd-tE-uiU">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--横幅广告-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="BannerAdViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsa-cG-fqX">
+                                <rect key="frame" x="16" y="112" width="284" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="19CDBA6E9E7131095B1C4F1B7FCB0D7C" borderStyle="roundedRect" placeholder="横幅广告位id" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wgj-xM-cZN">
+                                <rect key="frame" x="16" y="74" width="214" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="O4k-ET-1O1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbh-KF-y9z">
+                                <rect key="frame" x="238" y="74" width="62" height="30"/>
+                                <state key="normal" title="请求广告"/>
+                                <connections>
+                                    <action selector="buttonClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Zno-lr-cd2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Wgj-xM-cZN" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="30" id="G5q-6x-pby"/>
+                            <constraint firstItem="Wgj-xM-cZN" firstAttribute="leading" secondItem="bsa-cG-fqX" secondAttribute="leading" id="GVL-UB-HjF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xbh-KF-y9z" secondAttribute="trailing" constant="4" id="KEF-Xh-IAM"/>
+                            <constraint firstItem="bsa-cG-fqX" firstAttribute="top" secondItem="Wgj-xM-cZN" secondAttribute="bottom" constant="8" id="T3n-hy-jxD"/>
+                            <constraint firstItem="Wgj-xM-cZN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="aBS-sk-f2v"/>
+                            <constraint firstItem="xbh-KF-y9z" firstAttribute="trailing" secondItem="bsa-cG-fqX" secondAttribute="trailing" id="fpH-53-9cE"/>
+                            <constraint firstItem="Wgj-xM-cZN" firstAttribute="top" secondItem="xbh-KF-y9z" secondAttribute="top" id="j2H-te-yMI"/>
+                            <constraint firstItem="xbh-KF-y9z" firstAttribute="leading" secondItem="Wgj-xM-cZN" secondAttribute="trailing" constant="8" id="wHk-ON-4DE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="横幅广告" id="Y08-9S-rq1"/>
+                    <connections>
+                        <outlet property="label" destination="bsa-cG-fqX" id="3Mz-0f-bjp"/>
+                        <outlet property="tf_adUnitId" destination="Wgj-xM-cZN" id="fF8-Vx-6WK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="720.79999999999995" y="-504.19790104947532"/>
+        </scene>
+        <!--插屏广告-->
+        <scene sceneID="9kF-Bf-Ir7">
+            <objects>
+                <viewController id="ZrX-8G-xMw" customClass="InterstitialAdViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CNh-zn-crt"/>
+                        <viewControllerLayoutGuide type="bottom" id="0ad-WB-7gI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pzy-Dc-tjx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffe-tY-uMi">
+                                <rect key="frame" x="242" y="74" width="62" height="30"/>
+                                <state key="normal" title="请求广告"/>
+                                <connections>
+                                    <action selector="buttonClick:" destination="ZrX-8G-xMw" eventType="touchUpInside" id="4zS-8W-lpr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZ7-ni-Bwa">
+                                <rect key="frame" x="16" y="112" width="288" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="A5384C3FD0F43DF5DA2BD6F944154F8A" borderStyle="roundedRect" placeholder="插屏广告位id" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hqi-Vy-ZCp">
+                                <rect key="frame" x="16" y="74" width="210" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="WCF-8A-P2G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Hqi-Vy-ZCp" firstAttribute="leading" secondItem="JZ7-ni-Bwa" secondAttribute="leading" id="5FV-vv-OE2"/>
+                            <constraint firstItem="Ffe-tY-uMi" firstAttribute="trailing" secondItem="pzy-Dc-tjx" secondAttribute="trailingMargin" id="Eaf-4C-1GJ"/>
+                            <constraint firstItem="Ffe-tY-uMi" firstAttribute="leading" secondItem="Hqi-Vy-ZCp" secondAttribute="trailing" constant="16" id="U0T-6c-9Yw"/>
+                            <constraint firstItem="JZ7-ni-Bwa" firstAttribute="top" secondItem="Hqi-Vy-ZCp" secondAttribute="bottom" constant="8" id="cqJ-7W-vPq"/>
+                            <constraint firstItem="Ffe-tY-uMi" firstAttribute="trailing" secondItem="JZ7-ni-Bwa" secondAttribute="trailing" id="eVp-I6-vmf"/>
+                            <constraint firstItem="Hqi-Vy-ZCp" firstAttribute="top" secondItem="CNh-zn-crt" secondAttribute="bottom" constant="30" id="lZd-oW-Bh9"/>
+                            <constraint firstItem="Hqi-Vy-ZCp" firstAttribute="top" secondItem="Ffe-tY-uMi" secondAttribute="top" id="pWr-MD-zI6"/>
+                            <constraint firstItem="Hqi-Vy-ZCp" firstAttribute="leading" secondItem="pzy-Dc-tjx" secondAttribute="leadingMargin" id="rtN-dr-2wN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="插屏广告" id="5Gl-9a-XLP"/>
+                    <connections>
+                        <outlet property="label" destination="JZ7-ni-Bwa" id="JpY-eq-HCw"/>
+                        <outlet property="tf_adUnitId" destination="Hqi-Vy-ZCp" id="zjU-Ha-NsI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CPl-4Q-8hk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="720.79999999999995" y="160.56971514242881"/>
+        </scene>
+        <!--全屏图片广告-->
+        <scene sceneID="CTT-oe-d2p">
+            <objects>
+                <viewController id="ZHY-fB-TEk" customClass="FullScreenNativeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hko-Pe-KI5"/>
+                        <viewControllerLayoutGuide type="bottom" id="BJg-Bx-vzT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="keg-RW-17H">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1g-h8-jZZ">
+                                <rect key="frame" x="242" y="76" width="62" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="62" id="Bxh-Y9-3nE"/>
+                                    <constraint firstAttribute="height" constant="30" id="LNl-yl-wbK"/>
+                                </constraints>
+                                <state key="normal" title="请求广告"/>
+                                <connections>
+                                    <action selector="buttonClick:" destination="ZHY-fB-TEk" eventType="touchUpInside" id="fqB-SY-rRy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMt-1Z-HX0">
+                                <rect key="frame" x="16" y="116" width="288" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="9F080A5F0B7277EF3D0EEC45C8500E10" borderStyle="roundedRect" placeholder="全屏广告位" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DM7-5R-STS">
+                                <rect key="frame" x="16" y="74" width="210" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="f1g-h8-jZZ" firstAttribute="trailing" secondItem="keg-RW-17H" secondAttribute="trailingMargin" id="5o7-8E-pdL"/>
+                            <constraint firstItem="f1g-h8-jZZ" firstAttribute="trailing" secondItem="fMt-1Z-HX0" secondAttribute="trailing" id="9Ew-bv-kw6"/>
+                            <constraint firstItem="f1g-h8-jZZ" firstAttribute="leading" secondItem="DM7-5R-STS" secondAttribute="trailing" constant="16" id="9Fw-Ms-pDZ"/>
+                            <constraint firstItem="fMt-1Z-HX0" firstAttribute="top" secondItem="DM7-5R-STS" secondAttribute="bottom" constant="8" id="Oew-of-OFR"/>
+                            <constraint firstItem="fMt-1Z-HX0" firstAttribute="top" secondItem="f1g-h8-jZZ" secondAttribute="bottom" constant="10" id="QtT-nH-WkK"/>
+                            <constraint firstItem="DM7-5R-STS" firstAttribute="top" secondItem="Hko-Pe-KI5" secondAttribute="bottom" constant="30" id="Tb1-nM-uv7"/>
+                            <constraint firstItem="DM7-5R-STS" firstAttribute="leading" secondItem="keg-RW-17H" secondAttribute="leadingMargin" id="Z0a-ON-C1Z"/>
+                            <constraint firstItem="DM7-5R-STS" firstAttribute="centerY" secondItem="f1g-h8-jZZ" secondAttribute="centerY" id="h0L-k5-iGh"/>
+                            <constraint firstItem="DM7-5R-STS" firstAttribute="leading" secondItem="fMt-1Z-HX0" secondAttribute="leading" id="jvK-lZ-7Qb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="全屏图片广告" id="kJx-md-U2u"/>
+                    <connections>
+                        <outlet property="errorLabel" destination="fMt-1Z-HX0" id="Dp8-hY-vHN"/>
+                        <outlet property="tf_adUnitId" destination="DM7-5R-STS" id="n7N-Is-CEs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dMy-jv-e2P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="721" y="897"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3ta-Vt-1Xh">
+            <objects>
+                <navigationController id="Uqd-tE-uiU" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="keS-vm-aTM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="WAw-lp-2nu" kind="relationship" relationship="rootViewController" id="dlD-0t-OEr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NqX-4b-RMZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1418" y="161"/>
+        </scene>
+        <!--讯飞AI营销示例-->
+        <scene sceneID="K2A-mj-ql6">
+            <objects>
+                <viewController title="讯飞AI营销示例" id="WAw-lp-2nu" customClass="SampleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="abS-aR-tg5"/>
+                        <viewControllerLayoutGuide type="bottom" id="vNH-f8-h8A"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0sN-Nq-IaW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNG-5y-Uzs">
+                                <rect key="frame" x="16" y="174" width="288" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="N1a-2y-pjU"/>
+                                </constraints>
+                                <state key="normal" title="插屏广告" backgroundImage="button.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ZrX-8G-xMw" kind="push" id="Bhm-mr-Wel"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pnt-lv-the">
+                                <rect key="frame" x="16" y="259" width="288" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="uo5-mR-W9i"/>
+                                </constraints>
+                                <state key="normal" title="全屏图片广告" backgroundImage="button.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ZHY-fB-TEk" kind="push" id="YFf-rC-VPy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybs-DM-Ruf">
+                                <rect key="frame" x="16" y="89" width="288" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="xkI-Nk-XPo"/>
+                                </constraints>
+                                <state key="normal" title="横幅广告" backgroundImage="button.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="push" id="8sa-88-Y6l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qdc-Iq-beK">
+                                <rect key="frame" x="16" y="344" width="288" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="hqt-Og-B7y"/>
+                                </constraints>
+                                <state key="normal" title="信息流广告" backgroundImage="button.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ebg-Vw-qTe" kind="push" id="HAq-50-jNS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thV-gL-n2L">
+                                <rect key="frame" x="16" y="429" width="288" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="nG6-dy-sMr"/>
+                                </constraints>
+                                <state key="normal" title="视频广告" backgroundImage="button.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3JF-GF-Sk3" kind="push" id="etJ-8Q-hTp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ybs-DM-Ruf" firstAttribute="top" secondItem="abS-aR-tg5" secondAttribute="bottom" constant="45" id="6Bt-NW-lhg"/>
+                            <constraint firstAttribute="trailing" secondItem="pnt-lv-the" secondAttribute="trailing" constant="16" id="7xi-Bw-ynm"/>
+                            <constraint firstItem="aNG-5y-Uzs" firstAttribute="leading" secondItem="0sN-Nq-IaW" secondAttribute="leading" constant="16" id="8e6-Nw-6JP"/>
+                            <constraint firstItem="Qdc-Iq-beK" firstAttribute="leading" secondItem="0sN-Nq-IaW" secondAttribute="leading" constant="16" id="CUd-nc-cgc"/>
+                            <constraint firstItem="ybs-DM-Ruf" firstAttribute="leading" secondItem="0sN-Nq-IaW" secondAttribute="leading" constant="16" id="Hir-NM-2go"/>
+                            <constraint firstAttribute="trailing" secondItem="thV-gL-n2L" secondAttribute="trailing" constant="16" id="Kyx-aj-aAm"/>
+                            <constraint firstAttribute="trailing" secondItem="aNG-5y-Uzs" secondAttribute="trailing" constant="16" id="Lx4-dY-MkS"/>
+                            <constraint firstItem="pnt-lv-the" firstAttribute="top" secondItem="aNG-5y-Uzs" secondAttribute="bottom" constant="40" id="TfU-va-J4f"/>
+                            <constraint firstItem="thV-gL-n2L" firstAttribute="leading" secondItem="0sN-Nq-IaW" secondAttribute="leading" constant="16" id="YoR-0p-xIf"/>
+                            <constraint firstAttribute="trailing" secondItem="Qdc-Iq-beK" secondAttribute="trailing" constant="16" id="akH-oU-m70"/>
+                            <constraint firstItem="aNG-5y-Uzs" firstAttribute="top" secondItem="ybs-DM-Ruf" secondAttribute="bottom" constant="40" id="cEN-xp-FOA"/>
+                            <constraint firstItem="pnt-lv-the" firstAttribute="leading" secondItem="0sN-Nq-IaW" secondAttribute="leading" constant="16" id="fXG-Zp-Bsz"/>
+                            <constraint firstItem="thV-gL-n2L" firstAttribute="top" secondItem="Qdc-Iq-beK" secondAttribute="bottom" constant="40" id="l0N-1k-jhP"/>
+                            <constraint firstItem="Qdc-Iq-beK" firstAttribute="top" secondItem="pnt-lv-the" secondAttribute="bottom" constant="40" id="qIx-eA-ebV"/>
+                            <constraint firstAttribute="trailing" secondItem="ybs-DM-Ruf" secondAttribute="trailing" constant="16" id="sQ5-mP-skM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="rhm-fh-pjp">
+                        <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="alC-xO-tYQ">
+                            <connections>
+                                <segue destination="kis-fN-crd" kind="push" id="s1W-mD-dNm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xt0-pB-T4W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-306.39999999999998" y="160.56971514242881"/>
+        </scene>
+        <!--视频广告-->
+        <scene sceneID="gOP-wi-AE4">
+            <objects>
+                <viewController id="3JF-GF-Sk3" customClass="VideoAdViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AM7-mS-Rp0"/>
+                        <viewControllerLayoutGuide type="bottom" id="3wh-zg-Az2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YoP-VB-q8s">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cdi-NW-1oc">
+                                <rect key="frame" x="10" y="163" width="300" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="JS2-Lo-CUU"/>
+                                </constraints>
+                                <state key="normal" title="全屏视频广告" backgroundImage="button.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="full:" destination="3JF-GF-Sk3" eventType="touchUpInside" id="SFz-Xf-he6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G7z-QS-Ver">
+                                <rect key="frame" x="10" y="235" width="300" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="CbG-H8-43C"/>
+                                </constraints>
+                                <state key="normal" title="贴片视频广告" backgroundImage="button.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="patch:" destination="3JF-GF-Sk3" eventType="touchUpInside" id="EFU-dC-LQq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivY-sg-6fD">
+                                <rect key="frame" x="10" y="306" width="300" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="whw-ca-Qh0"/>
+                                </constraints>
+                                <state key="normal" title="信息流视频广告" backgroundImage="button.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="feed:" destination="3JF-GF-Sk3" eventType="touchUpInside" id="lAb-Ab-TLX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ivY-sg-6fD" firstAttribute="trailing" secondItem="Cdi-NW-1oc" secondAttribute="trailing" id="4lj-Ok-TfE"/>
+                            <constraint firstItem="ivY-sg-6fD" firstAttribute="top" secondItem="G7z-QS-Ver" secondAttribute="bottom" constant="26" id="LFY-f8-3uu"/>
+                            <constraint firstItem="ivY-sg-6fD" firstAttribute="leading" secondItem="Cdi-NW-1oc" secondAttribute="leading" id="cZw-Ws-lR1"/>
+                            <constraint firstItem="G7z-QS-Ver" firstAttribute="top" secondItem="Cdi-NW-1oc" secondAttribute="bottom" constant="27" id="coF-6u-Rcu"/>
+                            <constraint firstItem="Cdi-NW-1oc" firstAttribute="top" secondItem="AM7-mS-Rp0" secondAttribute="bottom" constant="119" id="e4j-2v-RdP"/>
+                            <constraint firstItem="Cdi-NW-1oc" firstAttribute="leading" secondItem="YoP-VB-q8s" secondAttribute="leading" constant="10" id="fKB-Mf-OLG"/>
+                            <constraint firstItem="G7z-QS-Ver" firstAttribute="trailing" secondItem="Cdi-NW-1oc" secondAttribute="trailing" id="mK1-jw-D5S"/>
+                            <constraint firstItem="G7z-QS-Ver" firstAttribute="leading" secondItem="Cdi-NW-1oc" secondAttribute="leading" id="o8L-X2-Daf"/>
+                            <constraint firstAttribute="trailing" secondItem="Cdi-NW-1oc" secondAttribute="trailing" constant="10" id="yps-QQ-kFC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="视频广告" id="21C-Z4-QCC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V65-1L-jFV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-207" y="1557"/>
+        </scene>
+        <!--信息流广告-->
+        <scene sceneID="KCw-YS-UrQ">
+            <objects>
+                <viewController id="Ebg-Vw-qTe" customClass="NativeAdViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QnG-gT-WbC"/>
+                        <viewControllerLayoutGuide type="bottom" id="P4h-g6-xZ2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Eeq-gx-b66">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZ1-7Z-HrP">
+                                <rect key="frame" x="10" y="166" width="300" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="NjI-PZ-mlO"/>
+                                </constraints>
+                                <state key="normal" title="单图广告" backgroundImage="button.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="6mn-bL-gxd" kind="push" identifier="one" id="H3d-JQ-keG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9cv-K7-yWH">
+                                <rect key="frame" x="10" y="237" width="300" height="45"/>
+                                <state key="normal" title="多图广告" backgroundImage="button.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="6mn-bL-gxd" kind="push" identifier="more" id="Nxd-ra-qD7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9cv-K7-yWH" firstAttribute="leading" secondItem="AZ1-7Z-HrP" secondAttribute="leading" id="D31-1V-o2h"/>
+                            <constraint firstItem="AZ1-7Z-HrP" firstAttribute="leading" secondItem="Eeq-gx-b66" secondAttribute="leading" constant="10" id="PL6-Vv-vKR"/>
+                            <constraint firstItem="9cv-K7-yWH" firstAttribute="trailing" secondItem="AZ1-7Z-HrP" secondAttribute="trailing" id="X2X-un-0xr"/>
+                            <constraint firstItem="AZ1-7Z-HrP" firstAttribute="top" secondItem="QnG-gT-WbC" secondAttribute="bottom" constant="122" id="X2t-xX-K6E"/>
+                            <constraint firstItem="9cv-K7-yWH" firstAttribute="top" secondItem="AZ1-7Z-HrP" secondAttribute="bottom" constant="26" id="Xar-Kw-xb0"/>
+                            <constraint firstAttribute="trailing" secondItem="AZ1-7Z-HrP" secondAttribute="trailing" constant="10" id="iNg-kN-JLZ"/>
+                            <constraint firstItem="9cv-K7-yWH" firstAttribute="height" secondItem="AZ1-7Z-HrP" secondAttribute="height" id="ygh-0G-wVh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="信息流广告" id="qfm-05-yP0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wJy-bg-bS8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="722" y="1557"/>
+        </scene>
+        <!--信息流广告-->
+        <scene sceneID="Ns2-nj-Sfu">
+            <objects>
+                <viewController id="6mn-bL-gxd" customClass="TypedNativeAdViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JSe-5h-EZO"/>
+                        <viewControllerLayoutGuide type="bottom" id="giM-aS-ox8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zd5-4Q-U4V">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cfb-ly-xtQ">
+                                <rect key="frame" x="242" y="76" width="62" height="30"/>
+                                <state key="normal" title="请求广告"/>
+                                <connections>
+                                    <action selector="buttonClick:" destination="6mn-bL-gxd" eventType="touchUpInside" id="rUH-Fe-d1d"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="F24E5B725F293DCDE892089EE1C78D9F" borderStyle="roundedRect" placeholder="信息流广告位" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S7u-WB-jO0">
+                                <rect key="frame" x="16" y="74" width="210" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p2H-cm-3IS">
+                                <rect key="frame" x="16" y="116" width="288" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ufl-ub-JoR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgt-2w-5Nd">
+                                <rect key="frame" x="16" y="254" width="288" height="314"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rvt-CJ-fQ4">
+                                        <rect key="frame" x="8" y="15" width="327" height="190"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="190" id="H8O-Hw-NIq"/>
+                                            <constraint firstAttribute="width" constant="327" id="wIi-2z-rfo"/>
+                                        </constraints>
+                                    </view>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="a1q-uC-Fpe">
+                                        <rect key="frame" x="8" y="213" width="327" height="180"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="GEE-hi-tbp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="rvt-CJ-fQ4" secondAttribute="trailing" constant="8" id="1NV-hc-L6M"/>
+                                    <constraint firstItem="rvt-CJ-fQ4" firstAttribute="top" secondItem="kgt-2w-5Nd" secondAttribute="top" constant="15" id="55b-yA-8V9"/>
+                                    <constraint firstAttribute="bottom" secondItem="a1q-uC-Fpe" secondAttribute="bottom" constant="20" id="9tB-lR-5jO"/>
+                                    <constraint firstItem="a1q-uC-Fpe" firstAttribute="top" secondItem="rvt-CJ-fQ4" secondAttribute="bottom" constant="8" id="AZ1-Sb-ibF"/>
+                                    <constraint firstItem="a1q-uC-Fpe" firstAttribute="leading" secondItem="rvt-CJ-fQ4" secondAttribute="leading" id="UW8-yY-xE4"/>
+                                    <constraint firstItem="a1q-uC-Fpe" firstAttribute="trailing" secondItem="rvt-CJ-fQ4" secondAttribute="trailing" id="XvT-0s-fbY"/>
+                                    <constraint firstItem="rvt-CJ-fQ4" firstAttribute="leading" secondItem="kgt-2w-5Nd" secondAttribute="leading" constant="8" id="gVv-mK-PWX"/>
+                                </constraints>
+                            </scrollView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="bidfloor" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9ry-Dg-aXo">
+                                <rect key="frame" x="17" y="196" width="80" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="hLi-yZ-1Sl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="pmp_id" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rKt-yG-WgN">
+                                <rect key="frame" x="105" y="196" width="79.5" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="79.5" id="QJf-2n-sov"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="pmp_bi" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o8T-c7-s5f">
+                                <rect key="frame" x="192.5" y="196" width="25" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="auction" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xhR-L7-dXc">
+                                <rect key="frame" x="225.5" y="196" width="79.5" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="79.5" id="pBg-pH-Ueb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpk-JZ-HrQ">
+                                <rect key="frame" x="242" y="158" width="62" height="30"/>
+                                <state key="normal" title="返回数据"/>
+                                <connections>
+                                    <action selector="receiveData:" destination="6mn-bL-gxd" eventType="touchUpInside" id="6Ft-wx-Zuk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xhR-L7-dXc" firstAttribute="top" secondItem="cpk-JZ-HrQ" secondAttribute="bottom" constant="8" id="8Xg-b9-rIs"/>
+                            <constraint firstItem="kgt-2w-5Nd" firstAttribute="top" secondItem="9ry-Dg-aXo" secondAttribute="bottom" constant="24" id="CF9-75-Boq"/>
+                            <constraint firstItem="rKt-yG-WgN" firstAttribute="leading" secondItem="9ry-Dg-aXo" secondAttribute="trailing" constant="8" id="Fwj-Sj-MYc"/>
+                            <constraint firstItem="kgt-2w-5Nd" firstAttribute="bottom" secondItem="Zd5-4Q-U4V" secondAttribute="bottomMargin" id="Gk8-37-JVK"/>
+                            <constraint firstItem="o8T-c7-s5f" firstAttribute="baseline" secondItem="xhR-L7-dXc" secondAttribute="baseline" id="HjX-21-Tbx"/>
+                            <constraint firstItem="9ry-Dg-aXo" firstAttribute="baseline" secondItem="rKt-yG-WgN" secondAttribute="baseline" id="JGJ-wm-Asv"/>
+                            <constraint firstItem="Cfb-ly-xtQ" firstAttribute="trailing" secondItem="Zd5-4Q-U4V" secondAttribute="trailingMargin" id="Pbo-1j-ZTy"/>
+                            <constraint firstItem="cpk-JZ-HrQ" firstAttribute="trailing" secondItem="kgt-2w-5Nd" secondAttribute="trailing" id="R2R-rc-gHO"/>
+                            <constraint firstItem="S7u-WB-jO0" firstAttribute="leading" secondItem="Zd5-4Q-U4V" secondAttribute="leadingMargin" id="R5h-3g-rTC"/>
+                            <constraint firstItem="xhR-L7-dXc" firstAttribute="leading" secondItem="o8T-c7-s5f" secondAttribute="trailing" constant="8" id="UK8-Sr-g5V"/>
+                            <constraint firstItem="p2H-cm-3IS" firstAttribute="top" secondItem="S7u-WB-jO0" secondAttribute="bottom" constant="8" id="VBE-mT-Eok"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xhR-L7-dXc" secondAttribute="trailing" constant="-1" id="VkJ-Kc-F6M"/>
+                            <constraint firstItem="9ry-Dg-aXo" firstAttribute="leading" secondItem="Zd5-4Q-U4V" secondAttribute="leadingMargin" constant="1" id="bag-jM-BzK"/>
+                            <constraint firstItem="S7u-WB-jO0" firstAttribute="centerY" secondItem="Cfb-ly-xtQ" secondAttribute="centerY" id="eha-Yi-XiM"/>
+                            <constraint firstItem="p2H-cm-3IS" firstAttribute="trailing" secondItem="cpk-JZ-HrQ" secondAttribute="trailing" id="gbE-dz-dv8"/>
+                            <constraint firstItem="o8T-c7-s5f" firstAttribute="leading" secondItem="rKt-yG-WgN" secondAttribute="trailing" constant="8" id="mci-JX-nN4"/>
+                            <constraint firstItem="rKt-yG-WgN" firstAttribute="baseline" secondItem="o8T-c7-s5f" secondAttribute="baseline" id="pUe-Dd-TnM"/>
+                            <constraint firstItem="p2H-cm-3IS" firstAttribute="leading" secondItem="kgt-2w-5Nd" secondAttribute="leading" id="qQk-ct-hpR"/>
+                            <constraint firstItem="cpk-JZ-HrQ" firstAttribute="top" secondItem="p2H-cm-3IS" secondAttribute="bottom" constant="12" id="raZ-g6-8R7"/>
+                            <constraint firstItem="S7u-WB-jO0" firstAttribute="leading" secondItem="p2H-cm-3IS" secondAttribute="leading" id="tlb-pF-0el"/>
+                            <constraint firstItem="Cfb-ly-xtQ" firstAttribute="leading" secondItem="cpk-JZ-HrQ" secondAttribute="leading" id="tx3-1p-y4X"/>
+                            <constraint firstItem="Cfb-ly-xtQ" firstAttribute="leading" secondItem="S7u-WB-jO0" secondAttribute="trailing" constant="16" id="zfH-LF-jpA"/>
+                            <constraint firstItem="S7u-WB-jO0" firstAttribute="top" secondItem="JSe-5h-EZO" secondAttribute="bottom" constant="30" id="zuP-Uj-dIa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="信息流广告" id="SKY-H0-LYS"/>
+                    <connections>
+                        <outlet property="adView" destination="rvt-CJ-fQ4" id="PsU-36-AHP"/>
+                        <outlet property="auction" destination="xhR-L7-dXc" id="cJy-Vo-XF7"/>
+                        <outlet property="bidfloor" destination="9ry-Dg-aXo" id="cfr-ew-MA4"/>
+                        <outlet property="errorLabel" destination="p2H-cm-3IS" id="Lh9-Ov-nqC"/>
+                        <outlet property="pmp_bi" destination="o8T-c7-s5f" id="Loo-CJ-rVR"/>
+                        <outlet property="pmp_id" destination="rKt-yG-WgN" id="CNG-9Q-u9o"/>
+                        <outlet property="recText" destination="a1q-uC-Fpe" id="EG5-nE-aUD"/>
+                        <outlet property="scrollView" destination="kgt-2w-5Nd" id="00I-Mz-2cf"/>
+                        <outlet property="tf_adUnitId" destination="S7u-WB-jO0" id="dcw-fu-nPI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4gx-je-XaK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1549.5999999999999" y="1556.6716641679161"/>
+        </scene>
+        <!--广告日志-->
+        <scene sceneID="4j3-Tg-aRa">
+            <objects>
+                <viewController title="广告日志" id="kis-fN-crd" customClass="LogViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qLV-7X-lZQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="fKE-Cq-Qoq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fm3-pU-6Km">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqe-Xm-pWV">
+                                <rect key="frame" x="16" y="52" width="32" height="32"/>
+                                <state key="normal" image="arrow.down" catalog="system"/>
+                                <connections>
+                                    <action selector="backBottom:" destination="kis-fN-crd" eventType="touchUpInside" id="p3D-Jp-05d"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YQK-Bi-mu5">
+                                <rect key="frame" x="16" y="90" width="288" height="458"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uaz-Wf-89v">
+                                <rect key="frame" x="96" y="53" width="207" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="207" id="GdM-9p-Naw"/>
+                                </constraints>
+                                <state key="normal" title="清除"/>
+                                <connections>
+                                    <action selector="clear:" destination="kis-fN-crd" eventType="touchUpInside" id="oiL-aR-IZj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Tm-mQ-Rlc">
+                                <rect key="frame" x="56" y="52" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="JDW-pz-1dx"/>
+                                    <constraint firstAttribute="width" constant="32" id="jd4-Rt-jsz"/>
+                                </constraints>
+                                <state key="normal" image="arrow.up" catalog="system"/>
+                                <connections>
+                                    <action selector="backTop:" destination="kis-fN-crd" eventType="touchUpInside" id="92J-7Q-SGq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tm-mQ-Rlc" firstAttribute="width" secondItem="aqe-Xm-pWV" secondAttribute="width" id="85w-b4-8Y2"/>
+                            <constraint firstItem="fKE-Cq-Qoq" firstAttribute="top" secondItem="YQK-Bi-mu5" secondAttribute="bottom" constant="20" id="GDN-uH-djQ"/>
+                            <constraint firstItem="YQK-Bi-mu5" firstAttribute="trailing" secondItem="fm3-pU-6Km" secondAttribute="trailingMargin" id="M1H-p7-1mN"/>
+                            <constraint firstItem="YQK-Bi-mu5" firstAttribute="leading" secondItem="fm3-pU-6Km" secondAttribute="leadingMargin" id="YAr-O0-G4h"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uaz-Wf-89v" secondAttribute="trailing" constant="1" id="ZuL-p2-Bfl"/>
+                            <constraint firstItem="6Tm-mQ-Rlc" firstAttribute="height" secondItem="aqe-Xm-pWV" secondAttribute="height" id="aC0-cc-x2f"/>
+                            <constraint firstItem="YQK-Bi-mu5" firstAttribute="top" secondItem="uaz-Wf-89v" secondAttribute="bottom" constant="7" id="adS-QP-eHl"/>
+                            <constraint firstItem="6Tm-mQ-Rlc" firstAttribute="leading" secondItem="aqe-Xm-pWV" secondAttribute="trailing" constant="8" id="bOW-Le-yUX"/>
+                            <constraint firstItem="uaz-Wf-89v" firstAttribute="leading" secondItem="6Tm-mQ-Rlc" secondAttribute="trailing" constant="8" id="d2s-3e-Zhf"/>
+                            <constraint firstItem="6Tm-mQ-Rlc" firstAttribute="top" secondItem="aqe-Xm-pWV" secondAttribute="top" id="i5b-RN-Lc7"/>
+                            <constraint firstItem="YQK-Bi-mu5" firstAttribute="top" secondItem="6Tm-mQ-Rlc" secondAttribute="bottom" constant="6" id="tMU-k4-IiT"/>
+                            <constraint firstItem="uaz-Wf-89v" firstAttribute="top" secondItem="qLV-7X-lZQ" secondAttribute="bottom" constant="9" id="uk3-Ra-P7l"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="auh-pn-Tjo"/>
+                    <connections>
+                        <outlet property="tv" destination="YQK-Bi-mu5" id="iSE-NF-Jdq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xIb-Z9-hWe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1284.375" y="1555.9859154929577"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Nxd-ra-qD7"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="arrow.down" catalog="system" width="120" height="128"/>
+        <image name="arrow.up" catalog="system" width="120" height="128"/>
+        <image name="button.png" width="300" height="60"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,828 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		661C492A1BAFAAFD00BE2225 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 661C49291BAFAAFD00BE2225 /* libz.1.2.5.tbd */; };
+		663ED29E19D13B88001586EF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 663ED29D19D13B88001586EF /* CoreLocation.framework */; };
+		665D0FB019B55A5100062934 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665D0FAF19B55A5100062934 /* SystemConfiguration.framework */; };
+		66830A4D19F65D7D00EB3949 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66830A4C19F65D7D00EB3949 /* AdSupport.framework */; };
+		AD4EB1A5251095C800F96785 /* IFLYPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AD4EB194251095C800F96785 /* IFLYPlayer.bundle */; };
+		AD4EB1A6251095C800F96785 /* libIFLYAdLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD4EB19F251095C800F96785 /* libIFLYAdLib.a */; };
+		AD5C43B624ED0AF700C4C4F1 /* LogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5C43B524ED0AF700C4C4F1 /* LogViewController.m */; };
+		AD6BF304246AC93200E17D4E /* Bugly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6BF303246AC93200E17D4E /* Bugly.framework */; };
+		AD7FAAA6241795E4004C91D0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7FAAA5241795E4004C91D0 /* StoreKit.framework */; };
+		AD81C325245179AD00B2BAC6 /* SplashVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = AD81C322245179AC00B2BAC6 /* SplashVideoAd.m */; };
+		AD81C326245179AD00B2BAC6 /* SplashNativeAd.m in Sources */ = {isa = PBXBuildFile; fileRef = AD81C323245179AC00B2BAC6 /* SplashNativeAd.m */; };
+		AD81C329245179FA00B2BAC6 /* SkipButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AD81C327245179FA00B2BAC6 /* SkipButton.m */; };
+		AD98208925905F7C0062A97F /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD98208825905F7C0062A97F /* AppTrackingTransparency.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		ADA47FD9244058C000C34505 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADA47FB2244058C000C34505 /* Images.xcassets */; };
+		ADA47FDC244058C000C34505 /* FeedVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA47FB7244058C000C34505 /* FeedVideoViewController.m */; };
+		ADA47FDD244058C000C34505 /* PatchVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA47FB8244058C000C34505 /* PatchVideoViewController.m */; };
+		ADA47FDE244058C000C34505 /* FullScreenVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA47FB9244058C000C34505 /* FullScreenVideoViewController.m */; };
+		ADA47FDF244058C000C34505 /* VideoAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA47FBA244058C000C34505 /* VideoAdViewController.m */; };
+		ADA47FE0244058C000C34505 /* InterstitialAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA47FC0244058C000C34505 /* InterstitialAdViewController.m */; };
+		ADA47FE1244058C000C34505 /* TypedNativeAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA47FC4244058C000C34505 /* TypedNativeAdViewController.m */; };
+		ADA47FE3244058C000C34505 /* FullScreenNativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA47FC8244058C000C34505 /* FullScreenNativeViewController.m */; };
+		ADA47FE4244058C000C34505 /* BannerAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA47FCA244058C000C34505 /* BannerAdViewController.m */; };
+		ADA47FE7244058C000C34505 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA47FD2244058C000C34505 /* Main.storyboard */; };
+		ADA47FE8244058C000C34505 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA47FD4244058C000C34505 /* main.m */; };
+		ADA47FE9244058C000C34505 /* SampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA47FD5244058C000C34505 /* SampleViewController.m */; };
+		ADA47FEA244058C000C34505 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA47FD6244058C000C34505 /* AppDelegate.m */; };
+		ADA47FEB244058C000C34505 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA47FD7244058C000C34505 /* Launch Screen.storyboard */; };
+		ADA47FED24405F4E00C34505 /* NativeAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA47FEC24405F4E00C34505 /* NativeAdViewController.m */; };
+		ADFD273324BDE925007E5B72 /* IFLYAdSampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFD273224BDE925007E5B72 /* IFLYAdSampleUITests.m */; };
+		B421EF2E206B27F7000BE6CC /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B421EF2D206B27F7000BE6CC /* MediaPlayer.framework */; };
+		B452C25D213E2C5900397F80 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B452C25C213E2C5900397F80 /* WebKit.framework */; };
+		B452C260213E60B200397F80 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CBDED91F90A4290091D817 /* AVFoundation.framework */; };
+		B452C261213E611700397F80 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B452C25E213E2EFA00397F80 /* CoreMedia.framework */; };
+		B452C262213E613E00397F80 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66830A4A19F65D7800EB3949 /* CoreTelephony.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADFD273524BDE925007E5B72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66F9CFD019B45B6500F5DF86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66F9CFD719B45B6500F5DF86;
+			remoteInfo = IFLYAdSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		661C49291BAFAAFD00BE2225 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		663ED29D19D13B88001586EF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		665D0FAF19B55A5100062934 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		66830A4A19F65D7800EB3949 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		66830A4C19F65D7D00EB3949 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		66F9CFD819B45B6500F5DF86 /* 讯飞AI营销示例.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "讯飞AI营销示例.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66F9CFDB19B45B6500F5DF86 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		66F9CFDD19B45B6500F5DF86 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		66F9CFDF19B45B6500F5DF86 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AD4EB193251095C800F96785 /* IFLYAdKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFLYAdKeys.h; sourceTree = "<group>"; };
+		AD4EB194251095C800F96785 /* IFLYPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IFLYPlayer.bundle; sourceTree = "<group>"; };
+		AD4EB195251095C800F96785 /* IFLYAdError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFLYAdError.h; sourceTree = "<group>"; };
+		AD4EB196251095C800F96785 /* IFLYAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFLYAd.h; sourceTree = "<group>"; };
+		AD4EB197251095C800F96785 /* IFLYAdHtmlData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFLYAdHtmlData.h; sourceTree = "<group>"; };
+		AD4EB198251095C800F96785 /* IFLYAdData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFLYAdData.h; sourceTree = "<group>"; };
+		AD4EB199251095C800F96785 /* IFLYInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFLYInterstitialAd.h; sourceTree = "<group>"; };
+		AD4EB19A251095C800F96785 /* IFLYAdLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFLYAdLog.h; sourceTree = "<group>"; };
+		AD4EB19B251095C800F96785 /* IFLYAdVideoData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFLYAdVideoData.h; sourceTree = "<group>"; };
+		AD4EB19C251095C800F96785 /* IFLYAdAudioData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFLYAdAudioData.h; sourceTree = "<group>"; };
+		AD4EB19D251095C800F96785 /* IFLYAdMonitorData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFLYAdMonitorData.h; sourceTree = "<group>"; };
+		AD4EB19E251095C800F96785 /* IFLYAdDeal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFLYAdDeal.h; sourceTree = "<group>"; };
+		AD4EB19F251095C800F96785 /* libIFLYAdLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libIFLYAdLib.a; sourceTree = "<group>"; };
+		AD4EB1A0251095C800F96785 /* IFLYNativeAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFLYNativeAd.h; sourceTree = "<group>"; };
+		AD4EB1A1251095C800F96785 /* IFLYAdTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFLYAdTool.h; sourceTree = "<group>"; };
+		AD4EB1A2251095C800F96785 /* IFLYVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFLYVideoAd.h; sourceTree = "<group>"; };
+		AD4EB1A3251095C800F96785 /* IFLYAdImgVoiceData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFLYAdImgVoiceData.h; sourceTree = "<group>"; };
+		AD4EB1A4251095C800F96785 /* IFLYBannerAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFLYBannerAd.h; sourceTree = "<group>"; };
+		AD5C43B424ED0AF700C4C4F1 /* LogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogViewController.h; sourceTree = "<group>"; };
+		AD5C43B524ED0AF700C4C4F1 /* LogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogViewController.m; sourceTree = "<group>"; };
+		AD6BF303246AC93200E17D4E /* Bugly.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bugly.framework; sourceTree = "<group>"; };
+		AD7FAAA5241795E4004C91D0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		AD81C321245179AC00B2BAC6 /* SplashVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashVideoAd.h; sourceTree = "<group>"; };
+		AD81C322245179AC00B2BAC6 /* SplashVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashVideoAd.m; sourceTree = "<group>"; };
+		AD81C323245179AC00B2BAC6 /* SplashNativeAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashNativeAd.m; sourceTree = "<group>"; };
+		AD81C324245179AD00B2BAC6 /* SplashNativeAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashNativeAd.h; sourceTree = "<group>"; };
+		AD81C327245179FA00B2BAC6 /* SkipButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkipButton.m; sourceTree = "<group>"; };
+		AD81C328245179FA00B2BAC6 /* SkipButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkipButton.h; sourceTree = "<group>"; };
+		AD98208825905F7C0062A97F /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
+		ADA47FB2244058C000C34505 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		ADA47FB7244058C000C34505 /* FeedVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedVideoViewController.m; sourceTree = "<group>"; };
+		ADA47FB8244058C000C34505 /* PatchVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatchVideoViewController.m; sourceTree = "<group>"; };
+		ADA47FB9244058C000C34505 /* FullScreenVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullScreenVideoViewController.m; sourceTree = "<group>"; };
+		ADA47FBA244058C000C34505 /* VideoAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoAdViewController.m; sourceTree = "<group>"; };
+		ADA47FBB244058C000C34505 /* FullScreenVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullScreenVideoViewController.h; sourceTree = "<group>"; };
+		ADA47FBC244058C000C34505 /* PatchVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatchVideoViewController.h; sourceTree = "<group>"; };
+		ADA47FBD244058C000C34505 /* FeedVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedVideoViewController.h; sourceTree = "<group>"; };
+		ADA47FBE244058C000C34505 /* VideoAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoAdViewController.h; sourceTree = "<group>"; };
+		ADA47FC0244058C000C34505 /* InterstitialAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterstitialAdViewController.m; sourceTree = "<group>"; };
+		ADA47FC1244058C000C34505 /* InterstitialAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterstitialAdViewController.h; sourceTree = "<group>"; };
+		ADA47FC3244058C000C34505 /* NativeAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeAdViewController.h; sourceTree = "<group>"; };
+		ADA47FC4244058C000C34505 /* TypedNativeAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypedNativeAdViewController.m; sourceTree = "<group>"; };
+		ADA47FC5244058C000C34505 /* FullScreenNativeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullScreenNativeViewController.h; sourceTree = "<group>"; };
+		ADA47FC6244058C000C34505 /* TypedNativeAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypedNativeAdViewController.h; sourceTree = "<group>"; };
+		ADA47FC8244058C000C34505 /* FullScreenNativeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullScreenNativeViewController.m; sourceTree = "<group>"; };
+		ADA47FCA244058C000C34505 /* BannerAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerAdViewController.m; sourceTree = "<group>"; };
+		ADA47FCB244058C000C34505 /* BannerAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerAdViewController.h; sourceTree = "<group>"; };
+		ADA47FCE244058C000C34505 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ADA47FCF244058C000C34505 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ADA47FD0244058C000C34505 /* SampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleViewController.h; sourceTree = "<group>"; };
+		ADA47FD1244058C000C34505 /* IFLYAdSample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "IFLYAdSample-Info.plist"; sourceTree = "<group>"; };
+		ADA47FD3244058C000C34505 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ADA47FD4244058C000C34505 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ADA47FD5244058C000C34505 /* SampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleViewController.m; sourceTree = "<group>"; };
+		ADA47FD6244058C000C34505 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ADA47FD7244058C000C34505 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		ADA47FD8244058C000C34505 /* IFLYAdSample-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IFLYAdSample-Prefix.pch"; sourceTree = "<group>"; };
+		ADA47FEC24405F4E00C34505 /* NativeAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeAdViewController.m; sourceTree = "<group>"; };
+		ADFD273024BDE925007E5B72 /* IFLYAdSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IFLYAdSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADFD273224BDE925007E5B72 /* IFLYAdSampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IFLYAdSampleUITests.m; sourceTree = "<group>"; };
+		ADFD273424BDE925007E5B72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3CBDED11F90A3F70091D817 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		B3CBDED31F90A4010091D817 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		B3CBDED51F90A40D0091D817 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		B3CBDED71F90A41B0091D817 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B3CBDED91F90A4290091D817 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B3CBDEDB1F90A4320091D817 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		B3CBDEDD1F90A4430091D817 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B3CBDEDF1F90A44E0091D817 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B421EF2D206B27F7000BE6CC /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		B452C25C213E2C5900397F80 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		B452C25E213E2EFA00397F80 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66F9CFD519B45B6500F5DF86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD98208925905F7C0062A97F /* AppTrackingTransparency.framework in Frameworks */,
+				B452C262213E613E00397F80 /* CoreTelephony.framework in Frameworks */,
+				B452C261213E611700397F80 /* CoreMedia.framework in Frameworks */,
+				B452C260213E60B200397F80 /* AVFoundation.framework in Frameworks */,
+				B452C25D213E2C5900397F80 /* WebKit.framework in Frameworks */,
+				B421EF2E206B27F7000BE6CC /* MediaPlayer.framework in Frameworks */,
+				AD6BF304246AC93200E17D4E /* Bugly.framework in Frameworks */,
+				665D0FB019B55A5100062934 /* SystemConfiguration.framework in Frameworks */,
+				661C492A1BAFAAFD00BE2225 /* libz.1.2.5.tbd in Frameworks */,
+				AD4EB1A6251095C800F96785 /* libIFLYAdLib.a in Frameworks */,
+				66830A4D19F65D7D00EB3949 /* AdSupport.framework in Frameworks */,
+				663ED29E19D13B88001586EF /* CoreLocation.framework in Frameworks */,
+				AD7FAAA6241795E4004C91D0 /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADFD272D24BDE925007E5B72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		66F9CFCF19B45B6500F5DF86 = {
+			isa = PBXGroup;
+			children = (
+				AD4EB191251095C800F96785 /* libs */,
+				66F9CFE119B45B6500F5DF86 /* IFLYAdSample */,
+				ADFD273124BDE925007E5B72 /* IFLYAdSampleUITests */,
+				66F9CFDA19B45B6500F5DF86 /* Frameworks */,
+				66F9CFD919B45B6500F5DF86 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		66F9CFD919B45B6500F5DF86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66F9CFD819B45B6500F5DF86 /* 讯飞AI营销示例.app */,
+				ADFD273024BDE925007E5B72 /* IFLYAdSampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66F9CFDA19B45B6500F5DF86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD98208825905F7C0062A97F /* AppTrackingTransparency.framework */,
+				AD7FAAA5241795E4004C91D0 /* StoreKit.framework */,
+				B452C25E213E2EFA00397F80 /* CoreMedia.framework */,
+				B452C25C213E2C5900397F80 /* WebKit.framework */,
+				B421EF2D206B27F7000BE6CC /* MediaPlayer.framework */,
+				B3CBDEDF1F90A44E0091D817 /* QuartzCore.framework */,
+				B3CBDEDD1F90A4430091D817 /* AudioToolbox.framework */,
+				B3CBDEDB1F90A4320091D817 /* AddressBook.framework */,
+				B3CBDED91F90A4290091D817 /* AVFoundation.framework */,
+				B3CBDED71F90A41B0091D817 /* libz.tbd */,
+				B3CBDED51F90A40D0091D817 /* Contacts.framework */,
+				B3CBDED31F90A4010091D817 /* libc++.tbd */,
+				B3CBDED11F90A3F70091D817 /* libicucore.tbd */,
+				661C49291BAFAAFD00BE2225 /* libz.1.2.5.tbd */,
+				66830A4C19F65D7D00EB3949 /* AdSupport.framework */,
+				66830A4A19F65D7800EB3949 /* CoreTelephony.framework */,
+				663ED29D19D13B88001586EF /* CoreLocation.framework */,
+				665D0FAF19B55A5100062934 /* SystemConfiguration.framework */,
+				66F9CFDB19B45B6500F5DF86 /* Foundation.framework */,
+				66F9CFDD19B45B6500F5DF86 /* CoreGraphics.framework */,
+				66F9CFDF19B45B6500F5DF86 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		66F9CFE119B45B6500F5DF86 /* IFLYAdSample */ = {
+			isa = PBXGroup;
+			children = (
+				AD6BF302246AC93200E17D4E /* bugly */,
+				AD81C3102451672600B2BAC6 /* splash */,
+				ADA47FB5244058C000C34505 /* biz */,
+				ADA47FB1244058C000C34505 /* res */,
+				ADA47FCC244058C000C34505 /* Supporting Files */,
+			);
+			name = IFLYAdSample;
+			sourceTree = "<group>";
+		};
+		AD4EB191251095C800F96785 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				AD4EB192251095C800F96785 /* sdk */,
+			);
+			name = libs;
+			path = ../../libs;
+			sourceTree = "<group>";
+		};
+		AD4EB192251095C800F96785 /* sdk */ = {
+			isa = PBXGroup;
+			children = (
+				AD4EB193251095C800F96785 /* IFLYAdKeys.h */,
+				AD4EB194251095C800F96785 /* IFLYPlayer.bundle */,
+				AD4EB195251095C800F96785 /* IFLYAdError.h */,
+				AD4EB196251095C800F96785 /* IFLYAd.h */,
+				AD4EB197251095C800F96785 /* IFLYAdHtmlData.h */,
+				AD4EB198251095C800F96785 /* IFLYAdData.h */,
+				AD4EB199251095C800F96785 /* IFLYInterstitialAd.h */,
+				AD4EB19A251095C800F96785 /* IFLYAdLog.h */,
+				AD4EB19B251095C800F96785 /* IFLYAdVideoData.h */,
+				AD4EB19C251095C800F96785 /* IFLYAdAudioData.h */,
+				AD4EB19D251095C800F96785 /* IFLYAdMonitorData.h */,
+				AD4EB19E251095C800F96785 /* IFLYAdDeal.h */,
+				AD4EB19F251095C800F96785 /* libIFLYAdLib.a */,
+				AD4EB1A0251095C800F96785 /* IFLYNativeAd.h */,
+				AD4EB1A1251095C800F96785 /* IFLYAdTool.h */,
+				AD4EB1A2251095C800F96785 /* IFLYVideoAd.h */,
+				AD4EB1A3251095C800F96785 /* IFLYAdImgVoiceData.h */,
+				AD4EB1A4251095C800F96785 /* IFLYBannerAd.h */,
+			);
+			path = sdk;
+			sourceTree = "<group>";
+		};
+		AD5C43B324ED0AF700C4C4F1 /* log */ = {
+			isa = PBXGroup;
+			children = (
+				AD5C43B424ED0AF700C4C4F1 /* LogViewController.h */,
+				AD5C43B524ED0AF700C4C4F1 /* LogViewController.m */,
+			);
+			path = log;
+			sourceTree = "<group>";
+		};
+		AD6BF302246AC93200E17D4E /* bugly */ = {
+			isa = PBXGroup;
+			children = (
+				AD6BF303246AC93200E17D4E /* Bugly.framework */,
+			);
+			path = bugly;
+			sourceTree = "<group>";
+		};
+		AD81C3102451672600B2BAC6 /* splash */ = {
+			isa = PBXGroup;
+			children = (
+				AD81C328245179FA00B2BAC6 /* SkipButton.h */,
+				AD81C327245179FA00B2BAC6 /* SkipButton.m */,
+				AD81C324245179AD00B2BAC6 /* SplashNativeAd.h */,
+				AD81C323245179AC00B2BAC6 /* SplashNativeAd.m */,
+				AD81C321245179AC00B2BAC6 /* SplashVideoAd.h */,
+				AD81C322245179AC00B2BAC6 /* SplashVideoAd.m */,
+			);
+			name = splash;
+			path = IFLYAdSample/splash;
+			sourceTree = "<group>";
+		};
+		ADA47FB1244058C000C34505 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				ADA47FB2244058C000C34505 /* Images.xcassets */,
+			);
+			name = res;
+			path = IFLYAdSample/res;
+			sourceTree = SOURCE_ROOT;
+		};
+		ADA47FB5244058C000C34505 /* biz */ = {
+			isa = PBXGroup;
+			children = (
+				AD5C43B324ED0AF700C4C4F1 /* log */,
+				ADA47FC9244058C000C34505 /* banner */,
+				ADA47FBF244058C000C34505 /* Interstitial */,
+				ADA47FC2244058C000C34505 /* native */,
+				ADA47FB6244058C000C34505 /* video */,
+			);
+			name = biz;
+			path = IFLYAdSample/biz;
+			sourceTree = SOURCE_ROOT;
+		};
+		ADA47FB6244058C000C34505 /* video */ = {
+			isa = PBXGroup;
+			children = (
+				ADA47FBD244058C000C34505 /* FeedVideoViewController.h */,
+				ADA47FB7244058C000C34505 /* FeedVideoViewController.m */,
+				ADA47FBB244058C000C34505 /* FullScreenVideoViewController.h */,
+				ADA47FB9244058C000C34505 /* FullScreenVideoViewController.m */,
+				ADA47FBC244058C000C34505 /* PatchVideoViewController.h */,
+				ADA47FB8244058C000C34505 /* PatchVideoViewController.m */,
+				ADA47FBE244058C000C34505 /* VideoAdViewController.h */,
+				ADA47FBA244058C000C34505 /* VideoAdViewController.m */,
+			);
+			path = video;
+			sourceTree = "<group>";
+		};
+		ADA47FBF244058C000C34505 /* Interstitial */ = {
+			isa = PBXGroup;
+			children = (
+				ADA47FC1244058C000C34505 /* InterstitialAdViewController.h */,
+				ADA47FC0244058C000C34505 /* InterstitialAdViewController.m */,
+			);
+			path = Interstitial;
+			sourceTree = "<group>";
+		};
+		ADA47FC2244058C000C34505 /* native */ = {
+			isa = PBXGroup;
+			children = (
+				ADA47FC5244058C000C34505 /* FullScreenNativeViewController.h */,
+				ADA47FC8244058C000C34505 /* FullScreenNativeViewController.m */,
+				ADA47FC3244058C000C34505 /* NativeAdViewController.h */,
+				ADA47FEC24405F4E00C34505 /* NativeAdViewController.m */,
+				ADA47FC6244058C000C34505 /* TypedNativeAdViewController.h */,
+				ADA47FC4244058C000C34505 /* TypedNativeAdViewController.m */,
+			);
+			path = native;
+			sourceTree = "<group>";
+		};
+		ADA47FC9244058C000C34505 /* banner */ = {
+			isa = PBXGroup;
+			children = (
+				ADA47FCB244058C000C34505 /* BannerAdViewController.h */,
+				ADA47FCA244058C000C34505 /* BannerAdViewController.m */,
+			);
+			path = banner;
+			sourceTree = "<group>";
+		};
+		ADA47FCC244058C000C34505 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ADA47FCF244058C000C34505 /* AppDelegate.h */,
+				ADA47FD6244058C000C34505 /* AppDelegate.m */,
+				ADA47FD1244058C000C34505 /* IFLYAdSample-Info.plist */,
+				ADA47FD8244058C000C34505 /* IFLYAdSample-Prefix.pch */,
+				ADA47FCD244058C000C34505 /* InfoPlist.strings */,
+				ADA47FD7244058C000C34505 /* Launch Screen.storyboard */,
+				ADA47FD4244058C000C34505 /* main.m */,
+				ADA47FD2244058C000C34505 /* Main.storyboard */,
+				ADA47FD0244058C000C34505 /* SampleViewController.h */,
+				ADA47FD5244058C000C34505 /* SampleViewController.m */,
+			);
+			name = "Supporting Files";
+			path = "IFLYAdSample/Supporting Files";
+			sourceTree = SOURCE_ROOT;
+		};
+		ADFD273124BDE925007E5B72 /* IFLYAdSampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ADFD273224BDE925007E5B72 /* IFLYAdSampleUITests.m */,
+				ADFD273424BDE925007E5B72 /* Info.plist */,
+			);
+			path = IFLYAdSampleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66F9CFD719B45B6500F5DF86 /* IFLYAdSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66F9D00A19B45B6500F5DF86 /* Build configuration list for PBXNativeTarget "IFLYAdSample" */;
+			buildPhases = (
+				66F9CFD419B45B6500F5DF86 /* Sources */,
+				66F9CFD519B45B6500F5DF86 /* Frameworks */,
+				66F9CFD619B45B6500F5DF86 /* Resources */,
+				AD6BF305246ACA5600E17D4E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IFLYAdSample;
+			productName = test;
+			productReference = 66F9CFD819B45B6500F5DF86 /* 讯飞AI营销示例.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADFD272F24BDE925007E5B72 /* IFLYAdSampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADFD273724BDE925007E5B72 /* Build configuration list for PBXNativeTarget "IFLYAdSampleUITests" */;
+			buildPhases = (
+				ADFD272C24BDE925007E5B72 /* Sources */,
+				ADFD272D24BDE925007E5B72 /* Frameworks */,
+				ADFD272E24BDE925007E5B72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADFD273624BDE925007E5B72 /* PBXTargetDependency */,
+			);
+			name = IFLYAdSampleUITests;
+			productName = IFLYAdSampleUITests;
+			productReference = ADFD273024BDE925007E5B72 /* IFLYAdSampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66F9CFD019B45B6500F5DF86 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1300;
+				ORGANIZATIONNAME = faf;
+				TargetAttributes = {
+					66F9CFD719B45B6500F5DF86 = {
+						DevelopmentTeam = G55BPQV7J4;
+						ProvisioningStyle = Automatic;
+					};
+					ADFD272F24BDE925007E5B72 = {
+						CreatedOnToolsVersion = 11.5;
+						DevelopmentTeam = G55BPQV7J4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 66F9CFD719B45B6500F5DF86;
+					};
+				};
+			};
+			buildConfigurationList = 66F9CFD319B45B6500F5DF86 /* Build configuration list for PBXProject "IFLYAdSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 66F9CFCF19B45B6500F5DF86;
+			productRefGroup = 66F9CFD919B45B6500F5DF86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				66F9CFD719B45B6500F5DF86 /* IFLYAdSample */,
+				ADFD272F24BDE925007E5B72 /* IFLYAdSampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66F9CFD619B45B6500F5DF86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA47FD9244058C000C34505 /* Images.xcassets in Resources */,
+				ADA47FEB244058C000C34505 /* Launch Screen.storyboard in Resources */,
+				AD4EB1A5251095C800F96785 /* IFLYPlayer.bundle in Resources */,
+				ADA47FE7244058C000C34505 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADFD272E24BDE925007E5B72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AD6BF305246ACA5600E17D4E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n#\n# Copyright 2016 Bugly, Tencent. All rights reserved.\n#\n# V1.4.0\n#\n# 2016.08.03\n#\n#\n#\n######################################################\n# 1. 脚本集成到Xcode工程的Target\n######################################################\n#\n# --- Copy the SCRIPT to the Run Script of Build Phases in the Xcode project ---\n#\n# #\nBUGLY_APP_ID=\"af67c3bbf3\"\n# #\nBUGLY_APP_KEY=\"8ba42f4d-0397-4fea-9f64-d5de6924b226\"\n# #\nBUNDLE_IDENTIFIER=\"com.iflytek.ad.Sample\"\n# #\nUPLOAD_DSYM_ONLY=1\n#\n# # 脚本默认配置的版本格式为CFBundleShortVersionString(CFBundleVersion),  如果你修改默认的版本格式, 请设置此变量, 如果不想修改, 请忽略此设置\n# CUSTOMIZED_APP_VERSION=\"\"\n#\n# # Debug模式编译是否上传，1＝上传 0＝不上传，默认不上传\nUPLOAD_DEBUG_SYMBOLS=1\n#\n# # 模拟器编译是否上传，1=上传 0=不上传，默认不上传\nUPLOAD_SIMULATOR_SYMBOLS=1\n#\n# #只有Archive操作时上传, 1=支持Archive上传 0=所有Release模式编译都上传\n# UPLOAD_ARCHIVE_ONLY=0\n#\n# #\n# source dSYMUpload.sh\n#\n# --- END OF SCRIPT ---\n#\n#\n#\n#\n#######################################################\n# 2. 脚本根据输入参数处理\n#######################################################\n#\n# #命令行下输入应用基本信息, .dSYM文件的父目录路径, 输出文件目录即可\n#\n# sh dSYMUpload.sh <bugly_app_id> <bugly_app_key> <app_bundle_identifier> <app_version> <dSYM_src_dir> <bSYMBOL_dest_dir>\n#\n# #\n#\n# #注意:\n# # 1. dSYMUpload.sh会调用buglySymboliOS.jar进行.dSYM解析，所以依赖Java运行时环境\n# # 2. dSYMUpload.sh和buglySymboliOS.jar的文件路径需一致\n#\n#\n\n#\n# --- CONTENT OF SCRIPT ---\n#\n\n# Bugly服务域名\nBUGLY_DSYM_UPLOAD_DOMAIN=\"api.bugly.qq.com\"\n\n# 注意jar工具的路径跟dSYMUpload.sh脚本路径一致, 请务必保证jar路径的正确性\nBUGLY_SYMBOL_JAR_PATH=\"dsymtool/buglySymboliOS.jar\"\n# 查找添加到系统目录的jar工具\nif [ ! -f \"${BUGLY_SYMBOL_JAR_PATH}\" ]; then\n    BUGLY_SYMBOL_JAR_PATH=\"$HOME/bin/buglySymboliOS.jar\"\nfi\n\n# 打印错误信息\nfunction exitWithMessage(){\n    echo \"--------------------------------\"\n    echo \"${1}\"\n    echo \"--------------------------------\"\n    exit ${2}\n}\n\n# 上传bSYMBOL文件\nfunction dSYMUpload() {\n    P_APP_ID=\"$1\"\n    P_APP_KEY=\"$2\"\n    P_APP_BUNDLE_ID=\"$3\"\n    P_APP_VERSION=\"$4\"\n    P_BSYMBOL_ZIP_FILE=\"$5\"\n\n    #\n    P_BSYMBOL_ZIP_FILE_NAME=${P_BSYMBOL_ZIP_FILE##*/}\n    P_BSYMBOL_ZIP_FILE_NAME=${P_BSYMBOL_ZIP_FILE_NAME//&/_}\n    P_BSYMBOL_ZIP_FILE_NAME=\"${P_BSYMBOL_ZIP_FILE_NAME// /_}\"\n\n    DSYM_UPLOAD_URL=\"https://${BUGLY_DSYM_UPLOAD_DOMAIN}/openapi/file/upload/symbol?app_id=${P_APP_ID}&app_key=${P_APP_KEY}\"\n    echo \"dSYM upload url: ${DSYM_UPLOAD_URL}\"\n\n    echo \"-----------------------------\"\n    STATUS=$(/usr/bin/curl -k \"${DSYM_UPLOAD_URL}\" --form \"api_version=1\" --form \"app_id=${P_APP_ID}\" --form \"app_key=${P_APP_KEY}\" --form \"symbolType=2\"  --form \"bundleId=${BUNDLE_IDENTIFIER}\" --form \"productVersion=${BUGLY_APP_VERSION}\" --form \"fileName=${P_BSYMBOL_ZIP_FILE_NAME}\" --form \"file=@${P_BSYMBOL_ZIP_FILE}\" --verbose)\n    echo \"-----------------------------\"\n\n    UPLOAD_RESULT=\"FAILTURE\"\n    echo \"Bugly server response: ${STATUS}\"\n    if [ ! \"${STATUS}\" ]; then\n        echo \"Error: Failed to upload the zip archive file.\"\n    elif [[ \"${STATUS}\" == *\"{\\\"reponseCode\\\":\\\"0\\\"}\"* ]]; then\n        echo \"Success to upload the dSYM for the app [${BUNDLE_IDENTIFIER} ${BUGLY_APP_VERSION}]\"\n        UPLOAD_RESULT=\"SUCCESS\"\n    else\n        echo \"Error: Failed to upload the zip archive file to Bugly.\"\n    fi\n\n    #Remove temp dSYM archive\n    #echo \"Remove temporary zip archive: ${DSYM_ZIP_FPATH}\"\n    #/bin/rm -f \"${DSYM_ZIP_FPATH}\"\n\n    if [ \"$?\" -ne 0 ]; then\n        exitWithMessage \"Error: Failed to remove temporary zip archive.\" 0\n    fi\n\n    echo \"--------------------------------\"\n    echo \"${UPLOAD_RESULT} - dSYM upload complete.\"\n\n    if [[ \"${UPLOAD_RESULT}\" == \"FAILTURE\" ]]; then\n        echo \"--------------------------------\"\n        echo \"Failed to upload the dSYM\"\n        echo \"Please check the script and try it again.\"\n    fi\n}\n\n# .dSYM解析为bSYMBOL文件\nfunction dSYMParse() {\n    DSYM_FILE=\"$1\"\n    DSYM_SYMBOL_FILE=\"$2\"\n\n    echo \"--------------------------------\"\n    echo \"Extract symbol info from .dSYM file. to ${DSYM_SYMBOL_FILE}\"\n    (/usr/bin/java -Xms512m -Xmx1024m -Dfile.encoding=UTF8 -jar \"${BUGLY_SYMBOL_JAR_PATH}\" -i \"${DSYM_FILE}\" -o \"${DSYM_SYMBOL_FILE}\" ) || exitWithMessage \"Error: Failed to extract symbols.\" 1\n    echo \"--------------------------------\"\n\n}\n\n# 执行\nfunction run() {\n\n    CONFIG_BUGLY_APP_ID=\"$1\"\n    CONFIG_BUGLY_APP_KEY=\"$2\"\n\n    CONFIG_BUGLY_APP_BUNDLE_IDENTIFIER=\"$3\"\n    CONFIG_BUGLY_APP_VERSION=\"$4\"\n    CONFIG_DSYM_SOURCE_DIR=\"$5\"\n    CONFIG_DSYM_DEST_DIR=\"$6\"\n    CONFIG_UPLOAD_DSYM_ONLY=\"$7\"\n\n    # 检查必须参数是否设置\n    if [ ! \"${CONFIG_BUGLY_APP_ID}\" ]; then\n        exitWithMessage \"Error: Bugly App ID not defined. Please set 'BUGLY_APP_ID' \" 0\n    fi\n\n    if [[ \"${CONFIG_BUGLY_APP_ID}\" == *\"App ID\"* ]]; then\n        exitWithMessage \"Error: Bugly App ID not defined.\" 0\n    fi\n\n    if [ ! \"${CONFIG_BUGLY_APP_KEY}\" ]; then\n        exitWithMessage \"Error: Bugly App Key not defined.\" 0\n    fi\n\n    if [ ! \"${CONFIG_BUGLY_APP_BUNDLE_IDENTIFIER}\" ]; then\n        exitWithMessage \"Error: Bundle Identifier not defined.\" 0\n    fi\n\n    if [ ! \"${CONFIG_BUGLY_APP_VERSION}\" ]; then\n        exitWithMessage \"Error: App Version not defined.\" 0\n    fi\n\n    if [ ! -e \"${CONFIG_DSYM_SOURCE_DIR}\" ]; then\n        exitWithMessage \"Error: Invalid dir ${CONFIG_DSYM_SOURCE_DIR}\" 0\n    fi\n\n    if [ ! \"${CONFIG_DSYM_DEST_DIR}\" ]; then\n        exitWithMessage \"Error: Invalid dir ${CONFIG_DSYM_DEST_DIR}\" 0\n    fi\n\n    if [ ! -e \"${CONFIG_DSYM_DEST_DIR}\" ]; then\n        mkdir ${CONFIG_DSYM_DEST_DIR}\n    fi\n\n    DSYM_FOLDER=\"${CONFIG_DSYM_SOURCE_DIR}\"\n    IFS=$'\\n'\n\n    echo \"Scaning dSYM FOLDER: ${DSYM_FOLDER} ...\"\n    RET=\"F\"\n    \n    #\n    for dsymFile in $(find \"$DSYM_FOLDER\" -name '*.dSYM'); do\n        RET=\"T\"\n        echo \"Found dSYM file: $dsymFile\"\n\n        DSYM_FILE_NAME=${dsymFile##*/}\n        DSYM_SYMBOL_ZIP_FILE_NAME=\"${DSYM_FILE_NAME}.zip\"\n        DSYM_SYMBOL_ZIP_FILE_NAME=\"${DSYM_SYMBOL_ZIP_FILE_NAME// /_}\"\n        DSYM_SYMBOL_ZIP_FILE=${CONFIG_DSYM_DEST_DIR}/${DSYM_SYMBOL_ZIP_FILE_NAME}\n\n        if [ $CONFIG_UPLOAD_DSYM_ONLY -eq 1 ]; then\n        \tif [ -e $DSYM_SYMBOL_ZIP_FILE ]; then\n        \t\trm -f $DSYM_SYMBOL_ZIP_FILE\n        \tfi\n            # 如果只上传dSYM，直接压缩dSYM目录\n            zip -r -j $DSYM_SYMBOL_ZIP_FILE $dsymFile -x *.plist\n        else\n            # 使用符号表工具来生成Symbol文件\n            dSYMParse $dsymFile $DSYM_SYMBOL_ZIP_FILE\n        fi\n        \n        # 上传\n        dSYMUpload $CONFIG_BUGLY_APP_ID $CONFIG_BUGLY_APP_KEY $CONFIG_BUGLY_APP_BUNDLE_IDENTIFIER $CONFIG_BUGLY_APP_VERSION $DSYM_SYMBOL_ZIP_FILE\n    done\n\n    if [ $RET = \"F\" ]; then\n        exitWithMessage \"No .dSYM found in ${DSYM_FOLDER}\" 0\n    fi\n}\n\n# 在Xcode工程中执行\nfunction runInXcode(){\n    echo \"Uploading dSYM to Bugly in Xcode ...\"\n\n    echo \"Info.Plist : ${INFOPLIST_FILE}\"\n\n    BUNDLE_VERSION=$(/usr/libexec/PlistBuddy -c 'Print CFBundleVersion' \"${INFOPLIST_FILE}\")\n    BUNDLE_SHORT_VERSION=$(/usr/libexec/PlistBuddy -c 'Print CFBundleShortVersionString' \"${INFOPLIST_FILE}\")\n\n    # 组装Bugly默认识别的版本信息(格式为CFBundleShortVersionString(CFBundleVersion), 例如: 1.0(1))\n    if [ ! \"${CUSTOMIZED_APP_VERSION}\" ]; then\n        BUGLY_APP_VERSION=\"${BUNDLE_SHORT_VERSION}(${BUNDLE_VERSION})\"\n    else\n        BUGLY_APP_VERSION=\"${CUSTOMIZED_APP_VERSION}\"\n    fi\n\n    echo \"--------------------------------\"\n    echo \"Prepare application information.\"\n    echo \"--------------------------------\"\n\n    echo \"Product Name: ${PRODUCT_NAME}\"\n    echo \"Bundle Identifier: ${BUNDLE_IDENTIFIER}\"\n    echo \"Version: ${BUNDLE_SHORT_VERSION}\"\n    echo \"Build: ${BUNDLE_VERSION}\"\n\n    echo \"Bugly App ID: ${BUGLY_APP_ID}\"\n    echo \"Bugly App key: ${BUGLY_APP_KEY}\"\n    echo \"Bugly App Version: ${BUGLY_APP_VERSION}\"\n\n    echo \"--------------------------------\"\n    echo \"Check the arguments ...\"\n\n    ##检查模拟器编译是否允许上传符号\n    if [ \"$EFFECTIVE_PLATFORM_NAME\" == \"-iphonesimulator\" ]; then\n    if [ $UPLOAD_SIMULATOR_SYMBOLS -eq 0 ]; then\n        exitWithMessage \"Warning: Build for simulator and skipping to upload. \\nYou can modify 'UPLOAD_SIMULATOR_SYMBOLS' to 1 in the script.\" 0\n    fi\n    fi\n\n    ##检查是否是Release模式编译\n    if [ \"${CONFIGURATION=}\" == \"Debug\" ]; then\n    if [ $UPLOAD_DEBUG_SYMBOLS -eq 0 ]; then\n        exitWithMessage \"Warning: Build for debug mode and skipping to upload. \\nYou can modify 'UPLOAD_DEBUG_SYMBOLS' to 1 in the script.\" 0\n    fi\n    fi\n\n    ##检查是否Archive操作\n    if [ $UPLOAD_ARCHIVE_ONLY -eq 1 ]; then\n    if [[ \"$TARGET_BUILD_DIR\" == *\"/Archive\"* ]]; then\n        echo \"Archive the package\"\n    else\n        exitWithMessage \"Warning: Build for NOT Archive mode and skipping to upload. \\nYou can modify 'UPLOAD_ARCHIVE_ONLY' to 0 in the script.\" 0\n    fi\n    fi\n\n    #\n    run ${BUGLY_APP_ID} ${BUGLY_APP_KEY} ${BUNDLE_IDENTIFIER} ${BUGLY_APP_VERSION} ${DWARF_DSYM_FOLDER_PATH} ${BUILD_DIR}/BuglySymbolTemp ${UPLOAD_DSYM_ONLY}\n}\n\n# 根据Xcode的环境变量判断是否处于Xcode环境\nINFO_PLIST_FILE=\"${INFOPLIST_FILE}\"\n\nBuildInXcode=\"F\"\nif [ -f \"${INFO_PLIST_FILE}\" ]; then\n    BuildInXcode=\"T\"\nfi\n\nif [ $BuildInXcode = \"T\" ]; then\n    runInXcode\nelse\n    echo \"\\nUsage: dSYMUpload.sh <bugly_app_id> <bugly_app_key> <app_bundle_identifier> <app_version> <dSYM_src_dir> <bSYMBOL_dest_dir> [upload_dsym_only]\\n\"\n    # 你可以在此处直接设置BuglyAppID和BuglyAppKey，排除不常变参数的输入\n    BUGLY_APP_ID=\"$1\"\n    BUGLY_APP_KEY=\"$2\"\n    BUNDLE_IDENTIFIER=\"$3\"\n    BUGLY_APP_VERSION=\"$4\"\n    DWARF_DSYM_FOLDER_PATH=\"$5\"\n    SYMBOL_OUTPUT_PATH=\"$6\"\n    UPLOAD_DSYM_ONLY=$7\n    run ${BUGLY_APP_ID} ${BUGLY_APP_KEY} ${BUNDLE_IDENTIFIER} ${BUGLY_APP_VERSION} ${DWARF_DSYM_FOLDER_PATH} ${SYMBOL_OUTPUT_PATH} ${UPLOAD_DSYM_ONLY}\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66F9CFD419B45B6500F5DF86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA47FE0244058C000C34505 /* InterstitialAdViewController.m in Sources */,
+				AD81C325245179AD00B2BAC6 /* SplashVideoAd.m in Sources */,
+				ADA47FDC244058C000C34505 /* FeedVideoViewController.m in Sources */,
+				ADA47FE1244058C000C34505 /* TypedNativeAdViewController.m in Sources */,
+				ADA47FDD244058C000C34505 /* PatchVideoViewController.m in Sources */,
+				ADA47FE3244058C000C34505 /* FullScreenNativeViewController.m in Sources */,
+				ADA47FE4244058C000C34505 /* BannerAdViewController.m in Sources */,
+				ADA47FED24405F4E00C34505 /* NativeAdViewController.m in Sources */,
+				AD81C329245179FA00B2BAC6 /* SkipButton.m in Sources */,
+				ADA47FDF244058C000C34505 /* VideoAdViewController.m in Sources */,
+				ADA47FEA244058C000C34505 /* AppDelegate.m in Sources */,
+				ADA47FE8244058C000C34505 /* main.m in Sources */,
+				ADA47FDE244058C000C34505 /* FullScreenVideoViewController.m in Sources */,
+				ADA47FE9244058C000C34505 /* SampleViewController.m in Sources */,
+				AD81C326245179AD00B2BAC6 /* SplashNativeAd.m in Sources */,
+				AD5C43B624ED0AF700C4C4F1 /* LogViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADFD272C24BDE925007E5B72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADFD273324BDE925007E5B72 /* IFLYAdSampleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADFD273624BDE925007E5B72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66F9CFD719B45B6500F5DF86 /* IFLYAdSample */;
+			targetProxy = ADFD273524BDE925007E5B72 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ADA47FCD244058C000C34505 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADA47FCE244058C000C34505 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		ADA47FD2244058C000C34505 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADA47FD3244058C000C34505 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		66F9D00819B45B6500F5DF86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		66F9D00919B45B6500F5DF86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		66F9D00B19B45B6500F5DF86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G55BPQV7J4;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../../libs/sdk",
+					"$(PROJECT_DIR)/bugly",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IFLYAdSample/Supporting Files/IFLYAdSample-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/IFLYAdSample/Supporting Files/IFLYAdSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../../libs/sdk",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iflytek.adSample;
+				PRODUCT_NAME = "讯飞AI营销示例";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		66F9D00C19B45B6500F5DF86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G55BPQV7J4;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../../libs/sdk",
+					"$(PROJECT_DIR)/bugly",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IFLYAdSample/Supporting Files/IFLYAdSample-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/IFLYAdSample/Supporting Files/IFLYAdSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../../libs/sdk",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iflytek.adSample;
+				PRODUCT_NAME = "讯飞AI营销示例";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		ADFD273824BDE925007E5B72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = G55BPQV7J4;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = IFLYAdSampleUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iflytek.adSample.IFLYAdSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IFLYAdSample;
+			};
+			name = Debug;
+		};
+		ADFD273924BDE925007E5B72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = G55BPQV7J4;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = IFLYAdSampleUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iflytek.adSample.IFLYAdSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IFLYAdSample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66F9CFD319B45B6500F5DF86 /* Build configuration list for PBXProject "IFLYAdSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66F9D00819B45B6500F5DF86 /* Debug */,
+				66F9D00919B45B6500F5DF86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66F9D00A19B45B6500F5DF86 /* Build configuration list for PBXNativeTarget "IFLYAdSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66F9D00B19B45B6500F5DF86 /* Debug */,
+				66F9D00C19B45B6500F5DF86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADFD273724BDE925007E5B72 /* Build configuration list for PBXNativeTarget "IFLYAdSampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADFD273824BDE925007E5B72 /* Debug */,
+				ADFD273924BDE925007E5B72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 66F9CFD019B45B6500F5DF86 /* Project object */;
+}
